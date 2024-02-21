@@ -1,5 +1,6 @@
 import React from "react";
 
+//TODO Responsive this section
 export default function AddProduct() {
   return (
     <div className="bg-bgSoft p-5 rounded-[10px] mt-5">
@@ -56,7 +57,7 @@ export default function AddProduct() {
            border-[2px] border-[#2e374a] col-span-2"
           name=""
           id=""
-          rows="16"
+          rows="8"
           placeholder="Description"
         ></textarea>
         <button

@@ -47,7 +47,7 @@ export default function Products() {
             <td className="p-[10px]">13.01.1402</td>
             <td className="p-[10px]">Active</td>
             <td className="p-[10px] flex items-center gap-[10px]">
-              <Link href="/">
+              <Link href="/dashboard/products/test">
                 <button
                   className="p-[5px_10px] rounded-[5px] text-text 
                  border-none cursor-pointer bg-green-700"

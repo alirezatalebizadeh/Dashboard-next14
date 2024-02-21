@@ -1,5 +1,7 @@
 import React from "react";
 
+//TODO Responsive this section
+
 export default function AddUser() {
   return (
     <div className="bg-bgSoft p-5 rounded-[10px] mt-5">

@@ -47,7 +47,7 @@ export default function User() {
             <td className="p-[10px]">Admin</td>
             <td className="p-[10px]">Active</td>
             <td className="p-[10px] flex items-center gap-[10px]">
-              <Link href="/">
+              <Link href="/dashboard/users/test">
                 <button
                   className="p-[5px_10px] rounded-[5px] text-text 
                  border-none cursor-pointer bg-green-700"
