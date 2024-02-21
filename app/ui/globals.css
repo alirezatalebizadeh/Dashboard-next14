@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.button:disabled {
+  cursor: not-allowed;
+}
 
 * {
   margin: 0;
@@ -12,7 +14,7 @@
 
 body {
   background-color: var(--bg);
-  color: var(--text); 
+  color: var(--text);
 }
 
 a {

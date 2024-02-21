@@ -78,7 +78,7 @@ const menuItems = [
 
 export default function Sidebar() {
   return (
-    <div className="sticky top-10">
+    <div className="sticky top-10 min-h-screen">
       <div className="flex items-center gap-5 mb-5">
         <Image
           className="rounded-full object-cover"
