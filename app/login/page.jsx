@@ -1,5 +1,5 @@
 import React from "react";
-
-export default function Login() {
-  return <div>Login</div>;
+import Login from "../ui/login/login";
+export default function Page() {
+  return <Login />;
 }
