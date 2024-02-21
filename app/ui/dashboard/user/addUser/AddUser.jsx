@@ -3,9 +3,12 @@ import React from "react";
 export default function AddUser() {
   return (
     <div className="bg-bgSoft p-5 rounded-[10px] mt-5">
-      <form action="" className="grid grid-cols-2 gap-[10px_40px]">
+      <form
+        action=""
+        className="grid grid-cols-2 gap-[10px_40px]"
+      >
         <input
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className="col-span-2 lg:col-span-1 p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
           type="text"
           placeholder="Username"
@@ -14,28 +17,28 @@ export default function AddUser() {
         />
         <input
           type="email"
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className="col-span-2 lg:col-span-1 p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
           placeholder="Email"
           name="Email"
         />
         <input
           type="password"
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className="col-span-2 lg:col-span-1 p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
           placeholder="Password"
           name="Password"
         />
         <input
           type="phone"
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className="col-span-2 lg:col-span-1 p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
           placeholder="Phone"
           name="Phone"
         />
         <input
           type="cat"
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className="col-span-2 lg:col-span-1 p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
           placeholder="Cat"
           name="Cat"
@@ -50,6 +53,7 @@ export default function AddUser() {
           <option value={true}>Yes</option>
           <option value={false}>No</option>
         </select>
+
         <select
           className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
@@ -66,9 +70,10 @@ export default function AddUser() {
            border-[2px] border-[#2e374a] col-span-2"
           name="address"
           id=""
-          rows="16"
+          rows="5"
           placeholder="Address"
         ></textarea>
+
         <button
           className="col-span-2 p-[30px] bg-teal-700 transition-colors hover:bg-teal-800
           cursor-pointer text-text border-none rounded-[5px]"

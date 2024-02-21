@@ -5,7 +5,7 @@ export default function AddProduct() {
     <div className="bg-bgSoft p-5 rounded-[10px] mt-5">
       <form action="" className="grid grid-cols-2 gap-[10px_40px]">
         <input
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className="col-span-2 lg:col-span-1 p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
           type="text"
           placeholder="Title"
@@ -13,7 +13,7 @@ export default function AddProduct() {
           required
         />
         <select
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className="col-span-2 lg:col-span-1 p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
           name="Category"
           id="Category"
@@ -25,34 +25,34 @@ export default function AddProduct() {
         </select>
         <input
           type="number"
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className="col-span-2 lg:col-span-1 p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
           placeholder="Price"
           name="Price"
         />
         <input
           type="number"
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className="col-span-2 lg:col-span-1 p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
           placeholder="Stock"
           name="Stock"
         />
         <input
           type="text"
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className="col-span-2 lg:col-span-1 p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
           placeholder="Color"
           name="Color"
         />
         <input
           type="text"
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className="col-span-2 lg:col-span-1 p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] "
           placeholder="Size"
           name="Size"
         />
         <textarea
-          className="p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
+          className=" p-[30px] bg-bg text-text rounded-[5px] mb-[30px]
            border-[2px] border-[#2e374a] col-span-2"
           name=""
           id=""
