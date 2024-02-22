@@ -4,6 +4,7 @@ import Image from "next/image";
 export default function SingleProductPage() {
   return (
     <div className="grid grid-cols-4 gap-[50px] mt-5">
+      {/* !Left section */}
       <div className="col-span-1 rounded-[50px] bg-bgSoft p-5 h-max">
         <div className="w-full h-[250px] relative rounded-[10px] overflow-hidden mb-5">
           <Image alt="" fill src="/noavatar.png" className="object-cover" />
