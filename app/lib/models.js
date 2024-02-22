@@ -4,19 +4,19 @@ const userSchema = new mongoose.Schema(
   {
     username: {
       type: String,
-      require: true,
+      required: true,
       unique: true,
       min: 3,
       max: 20,
     },
     email: {
       type: String,
-      require: true,
+      required: true,
       unique: true,
     },
     password: {
       type: String,
-      require: true,
+      required: true,
     },
     img: {
       type: String,
@@ -43,21 +43,21 @@ const productSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      require: true,
+      required: true,
       unique: true,
     },
     desc: {
       type: String,
-      require: true,
+      required: true,
     },
     price: {
       type: Number,
-      require: true,
+      required: true,
       min: 0,
     },
     stock: {
       type: Number,
-      require: true,
+      required: true,
       min: 0,
     },
     img: {
@@ -74,4 +74,5 @@ const productSchema = new mongoose.Schema(
 );
 
 export const User = mongoose.models.User || mongoose.model("User", userSchema);
-export const Product = mongoose.models.Product || mongoose.model("Product", productSchema);
+export const Product =
+  mongoose.models.Product || mongoose.model("Product", productSchema);

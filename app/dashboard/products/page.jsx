@@ -18,7 +18,7 @@ export default function Products() {
       </div>
       {/* ! Table */}
       <table className="w-full ">
-        <tHead className="">
+        <thead className="">
           <tr>
             <td className="p-[10px] font-bold">Title</td>
             <td className="p-[10px] font-bold">Description</td>
@@ -27,7 +27,7 @@ export default function Products() {
             <td className="p-[10px] font-bold">Stock</td>
             <td className="p-[10px] font-bold">Action</td>
           </tr>
-        </tHead>
+        </thead>
         <tbody>
           <tr>
             <td className="p-[10px]">

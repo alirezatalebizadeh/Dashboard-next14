@@ -99,7 +99,7 @@ export default function Sidebar() {
               {item.title}
             </span>
             {item.list.map((link) => (
-              <MenuLink item={link} />
+              <MenuLink key={link} item={link} />
             ))}
           </li>
         ))}

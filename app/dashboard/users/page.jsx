@@ -3,10 +3,12 @@ import Search from "@/app/ui/dashboard/search/Search";
 import Pagination from "@/app/ui/pagination/Pagination";
 import Link from "next/link";
 import Image from "next/image";
-
-
+import { fetchUsers } from "@/app/lib/data";
 
 export default async function User() {
+  const allUsers = fetchUsers();
+
+  console.log(allUsers);
 
   return (
     <div className="bg-bgSoft p-5 rounded-[10px] mt-5">
@@ -21,7 +23,7 @@ export default async function User() {
       </div>
       {/* ! Table */}
       <table className="w-full ">
-        <tHead className="">
+        <thead className="">
           <tr>
             <td className="p-[10px]">Name</td>
             <td className="p-[10px]">Email</td>
@@ -30,7 +32,7 @@ export default async function User() {
             <td className="p-[10px]">Status</td>
             <td className="p-[10px]">Action</td>
           </tr>
-        </tHead>
+        </thead>
         <tbody>
           <tr>
             <td className="p-[10px]">
