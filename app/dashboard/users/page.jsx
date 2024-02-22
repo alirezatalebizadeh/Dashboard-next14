@@ -4,7 +4,10 @@ import Pagination from "@/app/ui/pagination/Pagination";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function User() {
+
+
+export default async function User() {
+
   return (
     <div className="bg-bgSoft p-5 rounded-[10px] mt-5">
       {/* ! Search bar */}
