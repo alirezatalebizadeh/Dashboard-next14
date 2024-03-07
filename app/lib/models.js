@@ -1,22 +1,23 @@
 import mongoose from "mongoose";
 
+//! create a model for user
 const userSchema = new mongoose.Schema(
   {
     username: {
       type: String,
-      required: true,
+      require: true,
       unique: true,
       min: 3,
       max: 20,
     },
     email: {
       type: String,
-      required: true,
+      require: true,
       unique: true,
     },
     password: {
       type: String,
-      required: true,
+      require: true,
     },
     img: {
       type: String,
@@ -27,7 +28,7 @@ const userSchema = new mongoose.Schema(
     },
     isActive: {
       type: Boolean,
-      default: true,
+      default: false,
     },
     phone: {
       type: String,
@@ -36,28 +37,28 @@ const userSchema = new mongoose.Schema(
       type: String,
     },
   },
-  { timestamps: true }
+  { timeseries: true }
 );
-
+//! create a model for product
 const productSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      required: true,
+      require: true,
       unique: true,
     },
     desc: {
       type: String,
-      required: true,
+      require: true,
     },
     price: {
       type: Number,
-      required: true,
+      require: true,
       min: 0,
     },
     stock: {
       type: Number,
-      required: true,
+      require: true,
       min: 0,
     },
     img: {
@@ -70,7 +71,7 @@ const productSchema = new mongoose.Schema(
       type: String,
     },
   },
-  { timestamps: true }
+  { timeseries: true }
 );
 
 export const User = mongoose.models.User || mongoose.model("User", userSchema);
