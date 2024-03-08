@@ -39,6 +39,7 @@ const userSchema = new mongoose.Schema(
   },
   { timeseries: true }
 );
+
 //! create a model for product
 const productSchema = new mongoose.Schema(
   {

@@ -8,7 +8,7 @@ import { fetchUsers } from "@/app/lib/data";
 export default async function User() {
   const users = await fetchUsers();
   console.log(users);
-
+  
   return (
     <div className="bg-bgSoft p-5 rounded-[10px] mt-5">
       {/* ! Search bar */}

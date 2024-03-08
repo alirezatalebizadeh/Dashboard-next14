@@ -2,15 +2,17 @@ import mongoose from "mongoose";
 
 //! connected to db
 export const connectToDb = async () => {
-  // const connection = {};
+  const connection = {};
 
   try {
-    // if (connection.isConnected) return;
-    const db = await mongoose.connect(process.env.MONGO);
+    console.log(connection);
+    if (connection.isConnected) return;
+    const db = await mongoose.connect(
+      "mongodb+srv://lamadev:lamadev@cluster0.dmpwd7o.mongodb.net/dashboard?retryWrites=true&w=majority&appName=Cluster0"
+    );
     connection.isConnected = db.connections[0].readyState;
-    console.log(db);
+    console.log(connection);
   } catch (error) {
-    console.log(error);
     throw new Error(error);
   }
 };
